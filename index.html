@@ -1,50 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wycliffe | SaaS Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Main Content -->
-  <main class="main-content">
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Discover my work and projects below.</p>
-    </section>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">WYCLIFFE<span>.</span></div>
 
-    <section id="portfolio" class="portfolio-container">
-      <article class="portfolio-item">
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
-        <img src="https://via.placeholder.com/300" alt="Project 1">
-      </article>
-      <article class="portfolio-item">
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
-        <img src="https://via.placeholder.com/300" alt="Project 2">
-      </article>
-      <article class="portfolio-item">
-        <h3>Project 3</h3>
-        <p>Description of Project 3.</p>
-        <img src="https://via.placeholder.com/300" alt="Project 3">
-      </article>
-    </section>
-  </main>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-  </footer>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero / Home Section -->
+        <section id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-label">JUNIOR WEB DEVELOPER</p>
+
+                <h1>
+                    Building Better
+                    <span>SaaS Experiences.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I create modern, responsive and user-friendly web
+                    applications that help businesses work smarter,
+                    faster and more efficiently.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="primary-button">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+
+            <div class="section-heading">
+                <p class="section-label">MY WORK</p>
+
+                <h2>SaaS Projects</h2>
+
+                <p>
+                    A collection of software-as-a-service concepts
+                    designed to solve real-world business problems.
+                </p>
+            </div>
+
+
+            <div class="portfolio-container">
+
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+
+                    <div class="project-icon">
+                        📋
+                    </div>
+
+                    <span class="project-category">
+                        PRODUCTIVITY
+                    </span>
+
+                    <h3>TaskFlow</h3>
+
+                    <p>
+                        A project management SaaS platform that helps
+                        teams organize tasks, track deadlines and
+                        collaborate more effectively.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="portfolio-item">
+
+                    <div class="project-icon">
+                        💳
+                    </div>
+
+                    <span class="project-category">
+                        FINANCE
+                    </span>
+
+                    <h3>InvoicePro</h3>
+
+                    <p>
+                        A cloud-based invoicing platform that allows
+                        small businesses to create invoices, monitor
+                        payments and manage their finances.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>SaaS</span>
+                        <span>UI/UX</span>
+                        <span>Dashboard</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="portfolio-item">
+
+                    <div class="project-icon">
+                        💬
+                    </div>
+
+                    <span class="project-category">
+                        CUSTOMER SUCCESS
+                    </span>
+
+                    <h3>ClientPulse</h3>
+
+                    <p>
+                        A customer feedback SaaS application that
+                        helps businesses collect feedback and
+                        understand customer satisfaction.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Analytics</span>
+                        <span>UX</span>
+                        <span>Web App</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- Project 4 -->
+                <div class="portfolio-item">
+
+                    <div class="project-icon">
+                        📦
+                    </div>
+
+                    <span class="project-category">
+                        BUSINESS
+                    </span>
+
+                    <h3>StockPilot</h3>
+
+                    <p>
+                        An inventory management SaaS platform that
+                        helps businesses monitor products, stock levels
+                        and sales from one central dashboard.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Inventory</span>
+                        <span>Dashboard</span>
+                        <span>SaaS</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p class="section-label">ABOUT ME</p>
+
+                    <h2>Turning Ideas Into Digital Products</h2>
+
+                    <p>
+                        I am a junior web developer passionate about
+                        creating clean, responsive and visually engaging
+                        websites and web applications.
+                    </p>
+
+                    <p>
+                        My interests include SaaS products, user
+                        interfaces, responsive web design and solving
+                        business problems through technology.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Responsive Design</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+            <div class="contact-card">
+
+                <p class="section-label">GET IN TOUCH</p>
+
+                <h2>Let's Build Something Great</h2>
+
+                <p>
+                    Have a project idea, collaboration opportunity,
+                    or simply want to connect? I'd love to hear from you.
+                </p>
+
+                <a
+                    href="mailto:wycliffe.JSOE@gmail.com"
+                    class="email-button"
+                >
+                    wycliffe.JSOE@gmail.com
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <div class="footer-content">
+
+            <p>
+                © 2026 Wycliffe. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed & Built with HTML & CSS
+            </p>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
