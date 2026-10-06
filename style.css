@@ -1,5 +1,5 @@
 /* =========================================
-   GENERAL STYLES
+   GENERAL STYLING
    ========================================= */
 
 * {
@@ -13,66 +13,48 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7f9fc;
-    color: #1f2937;
+    background-color: #f4f7fb;
+    color: #333;
     line-height: 1.6;
 }
 
 
 /* =========================================
-   NAVIGATION
+   NAVIGATION BAR
    ========================================= */
 
-nav {
+.navbar {
+    background-color: #333;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
+
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.96);
-    padding: 1em 5%;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.logo span {
-    color: #38bdf8;
-}
-
-nav ul {
+.navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 2em;
 }
 
-nav li {
+.navbar ul li {
     display: inline;
+    margin: 0 1em;
 }
 
-nav a {
-    color: white;
+.navbar ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
-nav a:hover {
+.navbar ul li a:hover {
     color: #38bdf8;
 }
 
@@ -81,59 +63,47 @@ nav a:hover {
    MAIN CONTENT
    ========================================= */
 
-main {
-    padding-top: 4.5em;
+.main-content {
+    padding-top: 5em;
 }
 
-section {
-    padding: 6em 5%;
+main {
+    padding-top: 5em;
 }
 
 
 /* =========================================
-   HERO SECTION
+   SECTIONS
+   ========================================= */
+
+section {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+
+/* =========================================
+   HOME SECTION
    ========================================= */
 
 #home {
-    min-height: 90vh;
+    padding: 2em 1em;
+    text-align: center;
+
+    min-height: 80vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    text-align: center;
-
-    background:
-        radial-gradient(
-            circle at top right,
-            rgba(56, 189, 248, 0.25),
-            transparent 35%
-        ),
-        linear-gradient(
-            135deg,
-            #0f172a,
-            #1e293b
-        );
-
-    color: white;
-}
-
-.hero-content {
-    max-width: 850px;
-}
-
-.hero-label {
-    color: #38bdf8;
-    font-size: 0.9em;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 1em;
+    background-color: #172033;
+    color: #fff;
 }
 
 #home h1 {
-    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
     line-height: 1.1;
-    margin: 0;
 }
 
 #home h1 span {
@@ -141,78 +111,32 @@ section {
     color: #38bdf8;
 }
 
-.hero-description {
-    max-width: 700px;
-    margin: 2em auto;
-    color: #cbd5e1;
-    font-size: 1.15em;
+#home p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 650px;
+    margin: 0 auto 2em;
 }
 
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
 
-.primary-button,
-.secondary-button {
+/* Home button */
+
+.button {
     display: inline-block;
-    padding: 0.9em 1.5em;
+
+    background-color: #38bdf8;
+    color: #172033;
+
+    padding: 0.9em 1.7em;
+
     border-radius: 8px;
+
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
 }
 
-.primary-button {
-    background-color: #38bdf8;
-    color: #0f172a;
-}
-
-.primary-button:hover {
+.button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
-}
-
-.secondary-button {
-    border: 1px solid #64748b;
-    color: white;
-}
-
-.secondary-button:hover {
-    background-color: white;
-    color: #0f172a;
-}
-
-
-/* =========================================
-   SECTION HEADINGS
-   ========================================= */
-
-.section-heading {
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 3em;
-}
-
-.section-label {
-    color: #0284c7;
-    font-size: 0.85em;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.section-heading h2,
-#about h2,
-#contact h2 {
-    font-size: 2.5em;
-    margin: 0.3em 0;
-    color: #0f172a;
-}
-
-.section-heading p {
-    color: #64748b;
 }
 
 
@@ -221,147 +145,106 @@ section {
    ========================================= */
 
 #portfolio {
-    background-color: #f7f9fc;
+    padding: 2em 1em;
+    text-align: center;
+    background-color: #f4f7fb;
 }
 
+#portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: #172033;
+}
+
+.portfolio-intro {
+    max-width: 700px;
+    margin: 0 auto 3em;
+    color: #666;
+}
+
+
+/* =========================================
+   PORTFOLIO CONTAINER
+   ========================================= */
+
 .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     max-width: 1200px;
     margin: 0 auto;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    gap: 1.5em;
+    padding: 1em;
 }
 
 
 /* =========================================
-   PORTFOLIO CARDS
+   PORTFOLIO ITEMS
    ========================================= */
 
 .portfolio-item {
-    flex: 1 1 260px;
-    max-width: 280px;
+    background-color: #fff;
 
-    background-color: white;
+    border: 1px solid #ddd;
 
-    padding: 2em;
+    margin: 1em;
 
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
+    padding: 1em;
 
-    box-shadow:
-        0 5px 15px rgba(15, 23, 42, 0.08);
+    width: 30%;
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    box-sizing: border-box;
 
     text-align: left;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
 }
+
+
+/* Required hover effect */
 
 .portfolio-item:hover {
-    transform: translateY(-10px) scale(1.02);
-
-    box-shadow:
-        0 15px 35px rgba(15, 23, 42, 0.15);
+    transform: scale(1.05);
 }
 
 
-/* =========================================
-   PROJECT ICON
-   ========================================= */
-
-.project-icon {
-    width: 60px;
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    background-color: #e0f2fe;
-
-    font-size: 1.8em;
-
-    margin-bottom: 1.2em;
-}
-
-
-/* =========================================
-   PROJECT CATEGORY
-   ========================================= */
-
-.project-category {
-    font-size: 0.7em;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    color: #0284c7;
-}
-
-
-/* =========================================
-   PROJECT TITLES
-   ========================================= */
+/* Portfolio headings */
 
 .portfolio-item h3 {
-    font-size: 1.5em;
-    color: #0f172a;
-    margin: 0.4em 0;
+    font-weight: bold;
+
+    color: #172033;
+
+    margin-top: 0;
+
+    margin-bottom: 0.5em;
 }
 
 
-/* =========================================
-   PROJECT DESCRIPTIONS
-   ========================================= */
+/* Portfolio paragraphs */
 
 .portfolio-item p {
-    color: #64748b;
-    font-size: 0.95em;
-    margin-bottom: 1.2em;
+    color: #666;
+
+    margin-bottom: 0.5em;
 }
 
 
-/* =========================================
-   PROJECT TAGS
-   ========================================= */
+/* Portfolio images */
 
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin-bottom: 1.5em;
-}
+.portfolio-item img {
+    width: 100%;
 
-.project-tags span {
-    background-color: #f1f5f9;
-    color: #475569;
+    height: auto;
 
-    padding: 0.3em 0.7em;
+    display: block;
 
-    border-radius: 20px;
+    margin-bottom: 1em;
 
-    font-size: 0.75em;
-    font-weight: bold;
-}
-
-
-/* =========================================
-   PROJECT LINK
-   ========================================= */
-
-.project-link {
-    color: #0284c7;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-link:hover {
-    color: #0369a1;
-    text-decoration: underline;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -370,51 +253,22 @@ section {
    ========================================= */
 
 #about {
-    background-color: white;
-}
-
-.about-content {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.about-text {
+    padding: 2em 1em;
     text-align: center;
+    background-color: #fff;
 }
 
-.about-text p {
-    color: #64748b;
+#about h2 {
+    font-size: 2.5em;
+    color: #172033;
+    margin-bottom: 1em;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto 1em;
+    color: #666;
     font-size: 1.05em;
-}
-
-
-/* =========================================
-   SKILLS
-   ========================================= */
-
-.skills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.7em;
-    margin-top: 2em;
-}
-
-.skills span {
-    background-color: #0f172a;
-    color: white;
-
-    padding: 0.5em 1em;
-
-    border-radius: 20px;
-
-    font-size: 0.85em;
-
-    transition: transform 0.3s ease;
-}
-
-.skills span:hover {
-    transform: translateY(-3px);
 }
 
 
@@ -423,45 +277,35 @@ section {
    ========================================= */
 
 #contact {
-    background:
-        linear-gradient(
-            135deg,
-            #e0f2fe,
-            #f0f9ff
-        );
-
+    padding: 2em 1em;
     text-align: center;
+    background-color: #e0f2fe;
 }
 
-.contact-card {
-    max-width: 700px;
-    margin: 0 auto;
+#contact h2 {
+    font-size: 2.5em;
+    color: #172033;
+    margin-bottom: 0.5em;
 }
 
-.contact-card p {
-    color: #64748b;
+#contact p {
+    max-width: 650px;
+    margin: 0 auto 1.5em;
+    color: #666;
 }
 
 .email-button {
     display: inline-block;
 
-    margin-top: 1em;
+    background-color: #172033;
+    color: #fff;
 
     padding: 1em 1.5em;
-
-    background-color: #0f172a;
-
-    color: white;
 
     border-radius: 8px;
 
     text-decoration: none;
-
     font-weight: bold;
-
-    transition:
-        transform 0.3s ease,
-        background-color 0.3s ease;
 }
 
 .email-button:hover {
@@ -475,98 +319,79 @@ section {
    ========================================= */
 
 #footer {
-    background-color: #0f172a;
-    color: #cbd5e1;
+    background-color: #222;
 
-    padding: 2em 5%;
+    color: #fff;
+
+    padding: 2em;
 
     text-align: center;
+
+    position: relative;
+
+    bottom: 0;
+
+    width: 100%;
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-content p {
-    margin: 0.3em;
+#footer p {
+    margin: 0;
 }
 
 
 /* =========================================
-   TABLET RESPONSIVENESS
+   RESPONSIVE DESIGN
    ========================================= */
 
 @media (max-width: 900px) {
 
-    .nav-container {
-        flex-direction: column;
-        gap: 0.8em;
-    }
-
-    nav ul {
-        gap: 1em;
-    }
-
-    main {
-        padding-top: 7em;
-    }
-
     .portfolio-item {
-        flex: 1 1 40%;
-        max-width: 400px;
+        width: 45%;
+    }
+
+    #home h1 {
+        font-size: 2.5em;
     }
 }
 
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-   ========================================= */
-
 @media (max-width: 600px) {
 
-    nav {
-        padding: 1em;
+    .navbar {
+        padding: 0.8em;
     }
 
-    .logo {
-        font-size: 1.2em;
-    }
-
-    nav ul {
-        gap: 0.8em;
+    .navbar ul {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    nav a {
-        font-size: 0.9em;
+    .navbar ul li {
+        margin: 0.4em 0.7em;
+    }
+
+    .main-content {
+        padding-top: 8em;
     }
 
     main {
         padding-top: 8em;
     }
 
-    section {
-        padding: 4em 1em;
-    }
-
     #home {
-        min-height: 80vh;
+        padding: 4em 1em;
+        min-height: 75vh;
     }
 
     #home h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
-    .hero-description {
-        font-size: 1em;
-    }
-
-    .section-heading h2,
-    #about h2,
-    #contact h2 {
-        font-size: 2em;
+    #portfolio,
+    #about,
+    #contact {
+        padding: 4em 1em;
     }
 
     .portfolio-container {
@@ -575,18 +400,6 @@ section {
     }
 
     .portfolio-item {
-        flex: 1 1 100%;
-        width: 100%;
-        max-width: 450px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .primary-button,
-    .secondary-button {
-        width: 80%;
+        width: 90%;
     }
 }
